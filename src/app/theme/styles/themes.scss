@@ -1,0 +1,20 @@
+// @nebular theming framework
+@import '~@nebular/theme/styles/theming';
+// @nebular out of the box themes
+@import '~@nebular/theme/styles/themes';
+
+@import '../../../assets/fonts/fonts.scss';
+
+// which themes you what to enable (empty to enable all)
+$nb-enabled-themes: (dark);
+
+$nb-themes: nb-register-theme(
+  (
+    text-primary-color: rgb(68, 236, 208),
+    color-primary-default: rgb(109, 224, 228),
+    sidebar-header-gap: 2rem,
+    sidebar-header-height: initial,
+  ),
+  dark,
+  dark
+);

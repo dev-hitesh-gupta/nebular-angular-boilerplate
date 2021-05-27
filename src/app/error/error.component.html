@@ -1,0 +1,17 @@
+<nb-layout>
+  <nb-layout-column>
+    <nb-card>
+      <nb-card-body>
+        <div class="m-auto text-center col-xl-4 col-lg-6 col-md-8 col-sm-12">
+          <h2>404 {{ 'pageNotFoundTitle' | translate }}</h2>
+          <small class="mb-3 d-block">{{
+            'pageNotFoundMsg' | translate
+          }}</small>
+          <button fullwidth nbButton status="primary" (click)="goBack()">
+            {{ 'goBackBtn' | translate }}
+          </button>
+        </div>
+      </nb-card-body>
+    </nb-card>
+  </nb-layout-column>
+</nb-layout>

@@ -1,0 +1,13 @@
+package.json
+yarm.lock
+dist
+.vscode/*
+favicon.ico
+yarn.lock
+src/assets/*
+.editorconfig
+.githooks/*
+.prettierignore
+.sonarcloud.properties
+browserslist
+.gitignore

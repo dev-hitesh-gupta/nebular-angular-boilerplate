@@ -1,0 +1,28 @@
+<nb-layout>
+  <nb-layout-header fixed>
+    <spl-header></spl-header>
+  </nb-layout-header>
+
+  <nb-sidebar tag="menu-sidebar" class="" responsive>
+    <nb-menu [items]="menuItems"></nb-menu>
+  </nb-sidebar>
+
+  <nb-layout-column class="" center>
+    <router-outlet></router-outlet>
+  </nb-layout-column>
+
+  <nb-layout-footer fixed>
+    <span class="created-by">
+      Copyright 2020
+      <strong>
+        <a
+          href="https://www.sourcefuse.com/"
+          rel="noopener noreferrer"
+          alt="Sourcefuse Technologies"
+          target="_blank"
+          >Sourcefuse Technologies</a
+        >
+      </strong>
+    </span>
+  </nb-layout-footer>
+</nb-layout>

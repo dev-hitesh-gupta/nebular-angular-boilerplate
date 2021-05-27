@@ -1,0 +1,17 @@
+export enum RoleType {
+  SuperAdmin = 1,
+  System,
+  EHR,
+  External,
+  Admin,
+  Specialist,
+  Nurse,
+  Doctor,
+  Psychologist,
+  Nutritionist,
+  CustomerSupport,
+  TechSupport,
+  Patient,
+  Caregiver,
+  Others,
+}

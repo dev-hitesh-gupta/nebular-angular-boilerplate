@@ -1,0 +1,14 @@
+@import '~bootstrap/scss/mixins/breakpoints';
+@import '~@nebular/theme/styles/global/breakpoints';
+@import './theme/styles/themes.scss';
+
+@include nb-install-component() {
+  nb-layout-column {
+    padding-left: 0px;
+    padding-top: 0px;
+  }
+
+  nb-layout .layout {
+    background-color: rgba(167, 144, 144, 0.603);
+  }
+}

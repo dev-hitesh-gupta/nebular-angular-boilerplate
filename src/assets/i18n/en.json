@@ -1,0 +1,20 @@
+{
+  "loginMsg": "Log in with your username.",
+  "usernameLbl": "Username",
+  "forgotPasswordLink": "Forgot Password ?",
+  "loginLbl": "Log In",
+  "goodMorningLbl": "Good Morning",
+  "passwordLbl": "Password",
+  "rememberMeLbl": "Remember me",
+  "dontHaveAnAccount": "Don't have any account yet?",
+  "signupNow": "Signup Now",
+  "myProfileTitle": "My Profile",
+  "logoutLbl": "Logout",
+  "musicLibraryLbl": "Music Library",
+  "musicLbl": "Music",
+  "articleLbl": "Articles",
+  "userManagementLbl": "User Management",
+  "studentLbl": "Students",
+  "teachertLbl": "Teachers",
+  "studentgrpLbl": "Student Groups"
+}

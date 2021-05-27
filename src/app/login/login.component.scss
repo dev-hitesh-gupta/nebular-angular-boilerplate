@@ -1,0 +1,25 @@
+@import '../theme/styles/themes';
+@import '~bootstrap/scss/mixins/breakpoints';
+@import '~@nebular/theme/styles/global/breakpoints';
+
+@include nb-install-component() {
+  [_nghost-ake-c239] .forgot-password {
+    color: #fff;
+  }
+
+  a {
+    color: #fff;
+  }
+
+  .text-link {
+    color: rgb(70, 95, 236);
+  }
+
+  .login-button {
+    background-color: rgb(120, 231, 235);
+  }
+
+  .login-button:hover {
+    background-color: rgb(120, 231, 235);
+  }
+}

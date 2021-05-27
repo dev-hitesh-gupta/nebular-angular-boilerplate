@@ -1,0 +1,53 @@
+@import 'node_modules/bootstrap/scss/functions';
+@import 'node_modules/bootstrap/scss/variables';
+@import 'node_modules/bootstrap/scss/mixins';
+
+@import '~@nebular/theme/styles/themes';
+
+nb-auth nb-card-header {
+  display: none;
+}
+
+nb-menu {
+  .menu-item {
+    span {
+      align-items: center;
+      padding-top: 4px;
+    }
+    .menu-icon {
+      font-size: 1rem !important;
+      color: inherit !important;
+    }
+  }
+}
+nb-menu .menu-item .menu-icon.far {
+  font-size: 1rem !important;
+}
+
+.w-2 {
+  width: ($spacer * 2) !important;
+}
+
+.w-5 {
+  width: ($spacer * 5) !important;
+}
+
+.w-10 {
+  width: ($spacer * 10) !important;
+}
+
+.w-15 {
+  width: ($spacer * 15) !important;
+}
+
+.w-20 {
+  width: ($spacer * 20) !important;
+}
+
+.w-22 {
+  width: ($spacer * 22) !important;
+}
+
+.w-30 {
+  width: ($spacer * 30) !important;
+}

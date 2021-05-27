@@ -1,0 +1,16 @@
+{
+  "extends": "./tsconfig.json",
+  "compilerOptions": {
+    "outDir": "./out-tsc/app",
+    "types": [],
+    "paths": {
+      "@athlete-first/core/*": ["src/app/core/*"],
+      "@athlete-first/shared/*": ["src/app/shared/*"],
+      "@athlete-first/env/*": ["src/environments/*"],
+      "@athlete-first/notification/*": ["src/app/notification/*"],
+      "@athlete-first/theme/*": ["src/app/theme/*"]
+    }
+  },
+  "files": ["src/main.ts", "src/polyfills.ts"],
+  "include": ["src/**/*.d.ts"]
+}

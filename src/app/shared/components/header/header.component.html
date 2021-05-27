@@ -1,0 +1,26 @@
+<div class="header-container">
+  <div class="logo-containter">
+    <a (click)="toggleSidebar()" href="#" class="sidebar-toggle">
+      <nb-icon icon="menu-2-outline"></nb-icon>
+    </a>
+    <div class="d-inline-block ml-md-4" (click)="goToHome()">
+      <span>
+        <img height="20" src="/assets/logo.svg" alt="athlete-first Logo" />
+      </span>
+    </div>
+  </div>
+</div>
+
+<div class="header-container" *ngIf="!!user">
+  <nb-actions size="small" class="right">
+    <nb-action
+      ><nb-user
+        size="medium"
+        [nbContextMenu]="userMenu"
+        [name]="user.firstName"
+        [picture]="user.photo || abstractPhoto"
+        color="#cccccc"
+      ></nb-user>
+    </nb-action>
+  </nb-actions>
+</div>

@@ -31,6 +31,6 @@ export abstract class GetListAPICommand<T> implements ICommand {
     }
     return this.apiService
       .get(this.uri, options)
-      .pipe(map(resp => resp.map(data => this.adapter.adaptToModel(data))));
+      .pipe(map((resp:any) => resp.map(data => this.adapter.adaptToModel(data))));
   }
 }

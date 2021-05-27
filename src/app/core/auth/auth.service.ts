@@ -44,7 +44,7 @@ export class AuthService {
 
   public isLoggedIn(): Observable<boolean> {
     return this.currentUser().pipe(
-      switchMap(user => {
+      switchMap((user:any) => {
         if (user && user.id) {
           return of(true);
         } else {
@@ -56,7 +56,7 @@ export class AuthService {
 
   public isLoggedWithLastLoginIn(): Observable<boolean> {
     return this.currentUser().pipe(
-      switchMap(user => {
+      switchMap((user:any) => {
         if (user && user.id && user.lastLogin) {
           return of(true);
         } else {
@@ -83,7 +83,7 @@ export class AuthService {
         headers: new HttpHeaders().set(ErrToastSkipHeader, ''),
       };
       return command.execute().pipe(
-        tap(res => {
+        tap((res:any) => {
           if (!res.lastLogin) {
             this.store.setUser(res);
             setTimeout(() => {
@@ -176,9 +176,6 @@ export class AuthService {
 
   public authorize(secret: string): void {
     const user = this.store.getUser();
-    if (!user.username) {
-      this.router.navigate(['login']);
-    }
     // sonarignore:start
     const command: GetTokenCommand<any> = new GetTokenCommand(
       this.apiService,
@@ -187,7 +184,6 @@ export class AuthService {
     // sonarignore:end
     command.parameters = {
       data: {
-        username: user.username.toLowerCase(),
         clientId: environment.clientId,
         code: secret,
       },
@@ -229,7 +225,7 @@ export class AuthService {
       .execute()
       .pipe(
         tap(
-          response => {
+          (response:any) => {
             if (response.accessToken && response.refreshToken) {
               this.store.clearAll();
               this.store.saveAccessToken(response.accessToken);

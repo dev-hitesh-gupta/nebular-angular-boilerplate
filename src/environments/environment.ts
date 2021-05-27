@@ -5,7 +5,7 @@ export const environment = {
   production: false,
   authApiUrl: 'http://localhost:3001/auth-service',
   userApiUrl: '',
-  clientId: 'webapp',
+  clientId: 'onboarding_webapp',
   clientSecret: 'saqw21!@',
   messageTimeout: 5000,
   homePath: '/main/home',
